@@ -1,0 +1,40 @@
+.cardWrapper.flip .flipper {
+  transform: rotateY(180deg);
+}
+
+.cardWrapper {
+  width: 25%;
+  margin-top: 10px;
+}
+
+.cardWrapper,
+.card,
+.backCard {
+  width: 60px;
+  height: 60px;
+}
+
+.flipper {
+  transition: 1s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+.card,
+.backCard {
+  backface-visibility: hidden;
+  position: absolute;
+
+  border: 1px solid black;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  z-index: 2;
+}
+
+.backCard {
+  transform: rotateY(180deg);
+}

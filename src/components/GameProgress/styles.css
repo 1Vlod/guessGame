@@ -1,0 +1,32 @@
+.game-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  color: white;
+}
+
+.btn-start {
+  background: white;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 20px;
+
+  transition: all .5s;
+  
+  height: 40px;
+  font-size: 20px;
+  padding: 0.5rem;
+}
+
+.btn-start:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.btn-start:active {
+  opacity: .3;
+}
